@@ -24,11 +24,11 @@
  */
 typedef struct flags
 {
-  unsigned int plusf;
-  unsigned int spacef;
-  unsigned int hashtagf;
-  unsigned int hmod;
-  unsigned int lmod;
+unsigned int plusf;
+unsigned int spacef;
+unsigned int hashtagf;
+unsigned int hmod;
+unsigned int lmod;
 } flags_t;
 
 /**
@@ -38,8 +38,8 @@ typedef struct flags
  */
 typedef struct specifier
 {
-  char spec;
-  int (*f)(va_list ap, flags_t *f);
+char spec;
+int (*f)(va_list ap, flags_t *f);
 } specType;
 
 /* _put.c module */
