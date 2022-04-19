@@ -1,0 +1,76 @@
+.TH man 3 "4-19-2022" "V1.0" "Homemade _printf function"
+.SH NAME
+.B _printf
+- implement _printf function (almost) from scratch
+.SH SYNOPSIS
+.B _printf()
+- ALX project 'Write your own printf function' with standard library.
+.SH DESCRIPTION
+The function _printf produces a string according to a
+.I format
+to the standard output.
+It can receive a variable number of arguments, thanks to variadic function.
+Produced with our current technical skills, within limited time.
+.SH OPTIONS
+.B %c
+- prints a character
+.br
+.B %s
+- prints a string
+.br
+.B %%
+- prints a %
+.br
+.B  %d, %i
+- prints an integer
+.br
+.B %o, %b
+- respectively print a number in
+.I octal
+and
+.I binary
+base.
+.br
+.B %x, %X
+- respecively print a number in
+. I lowercase
+and
+. I uppercase
+hexadecimal base.
+.br
+.B %u
+- prints an unsigned integer
+.br
+.B %S
+- handles non-printable characters: \\x, followed by the ASCII code value in uppercase hexadecimal.
+.br
+.B %p
+- prints an address, given by a pointer variable
+.br
+.B %r
+- prints a string in reverse
+.br
+.B %R
+- prints a string in rot13 encryption
+.br
+.sp
+.B Flag characters for conversion specifiers
+.sp
+.B +
+- prints a '+' sign in front of positive integers and a '-' sign in front of negative integers. + overrides a space when both flags are given.
+.sp
+.B ' '
+- prints a space in front of signed integers.
+.sp
+.B #
+- modifier for o, x and X. For x, adds \(dq0x\(dq, and for X, adds \(dq0X\(dq in front of the number. For o, if the converted number doesn't already begin with a 0, adds a 0.
+.sp
+.br
+.SH SEE ALSO
+.I _putchar.c
+.SH NOTES
+_printf uses a function called _putchar, that uses the system call write().
+.SH BUGS
+Working on removing bugs.
+.SH AUTHORS
+Zelalem Abebe & Menilk Sahlu
